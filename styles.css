@@ -1,58 +1,100 @@
+/* style.css */
+
+/* Importing the new font */
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.margin-top{
+    margin-top:10px
+}
+
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-  }
+  width: 100%;
+  background-color: #704747; /* Change background color */
+  color: #e6e6e6; /* Change text color */
+  background-image: url(./image.jpg);
+  background-size: cover;
   
-  .container {
-    max-width: 400px;
-    margin: auto;
-  }
+}
+
+/* header heading section */
+#heading {
+  margin-top: 70px;
+  display: center;
+  text-align: center;
   
-  h1 {
-    text-align: center;
-  }
-  
-  .add-task {
-    display: flex;
-  }
-  
-  .add-task input {
-    flex: 1;
-    padding: 10px;
-  }
-  
-  .add-task button {
-    padding: 10px 20px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-  }
-  
-  li.checked {
-    background-color: #e0f7fa;
-    text-decoration: line-through;
-  }
-  
-  li button {
-    background-color: #ff6f61;
-    border: none;
-    padding: 5px 10px;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  li button:hover {
-    background-color: #e53935;
-  }
-  
+}
+
+/* header navbar */
+#nav {
+  box-shadow: rgba(236, 231, 231, 0.973) 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
+  width: 100;
+} 
+
+/* header search bar section */
+#search-bar {
+  max-width: 600px;
+}
+
+#search-bar input {
+  height: 50px;
+  border-radius: 20px;
+  background-color: #333333; /* Change search bar background color */
+  color: #ffffff; /* Change search bar text color */
+}
+
+/* meal card */
+#card {
+  background-color: #ff6666; /* Change meal card background color */
+  padding: 10px;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#card img {
+  border-radius: 50%;
+}
+
+/* meal details container */
+#meal-details {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ff6666; /* Change meal details background color */
+}
+
+#meal-header {
+  width: 70%;
+  margin: auto;
+}
+
+#meal-thumbail img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+#details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+}
+
+#meal-instruction {
+  margin: auto;
+  text-align: center;
+}
+
+/* favourites offcanvas */
+#favourites-body {
+  background-color: #1a1a1a; /* Change offcanvas background color */
+}
